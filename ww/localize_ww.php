@@ -59,4 +59,3 @@ $GLOBALS['loc'] = array
 	,	'no_results_found'			=>	'No results found'
 	)
 );
-

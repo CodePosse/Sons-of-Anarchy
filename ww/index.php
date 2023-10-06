@@ -31,4 +31,3 @@ setcookie
 header
 (	'Location: ../index.php'
 );
-
