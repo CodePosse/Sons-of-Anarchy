@@ -1,0 +1,812 @@
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+		
+
+/* Fonts. Download the fonts from Fonts.com if possible.  */
+@font-face {
+	font-family: 'Carnevalee';
+	src: url('fonts/Carnevalee Freakshow.eot');
+	src: local('?'), url('fonts/Carnevalee_Freakshow.svg') format('svg'), url('fonts/Carnevale_Freakshow.woff') format('woff'), url('fonts/Carnevalee_Freakshow.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+font-family:"HelveticaNeue_LtCn";
+src:url("Fonts/3fd2c21d-af8b-45be-a1e2-4e7182b7639e.eot?#iefix");
+src:url("Fonts/3cf3e566-7fc6-488f-8058-e5eb7ac5dc23.svg#3cf3e566-7fc6-488f-8058-e5eb7ac5dc23") format("svg"), url("Fonts/3fd2c21d-af8b-45be-a1e2-4e7182b7639e.eot?#iefix") format("eot"),url("Fonts/4d888997-2061-451b-8569-6cee195e9915.woff") format("woff"),url("Fonts/bc71ac4a-9cc7-4120-a150-788ae80b91ec.ttf") format("truetype");
+}
+
+/* HTML TAGS  */
+
+
+
+
+/* Max-BG
+*****************************************/
+html { 
+  background: url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family:"HelveticaNeue_LtCn";
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Body
+*****************************************/
+#wrapper {
+	overflow:hidden;
+}
+
+#page{	
+	overflow:hidden;
+	width:100%;
+	margin-top:215px;
+}
+
+#content{
+	margin:0 auto;
+	padding: 0 0 0 0;
+	width:970px;
+}
+
+div {position: relative}
+
+input {
+	font-family:"HelveticaNeue_LtCn";
+	width: 264px;
+	height: 36px;
+	border: 1px solid #8a8a8a;
+	background-color: #8a8a8a;
+	margin: 18px 10px 12px 8px;
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+/* Header 
+***************************************/
+#header {
+	margin:0 auto;
+	background: url(../images/logo.png) no-repeat center top;
+	height: 431px;
+	padding: 1px;
+	width: 873px;
+	position: fixed;
+	z-index:50;	
+	left:50%;
+	margin-left:-437px;
+	
+}
+
+
+#btn-grp {
+	float:left;
+	position: relative;
+	font-family: 'Carnevalee';
+	margin-top:4px;
+}
+
+
+.btn {
+	font-family: 'Carnevalee';
+	background: url(../images/bg-header-btn.png)  no-repeat;
+	height:38px;
+	line-height: 38px;
+	text-align: center;
+	font-size:24px;
+	color:#cc0814;
+	width:205px;
+	cursor: pointer;
+	margin-bottom: 2px;
+}
+
+.btn:hover {
+	color:#000;
+}
+
+
+.btn-grp .btn p {
+	margin:1px !important;
+}
+
+#icon-box{
+		
+	float:right;
+	position: relative;
+}
+
+#social ul{
+	float: right;
+	padding: 10px 20px;
+}
+
+
+#social li, .viewSocial li {
+	display: inline !important;
+	float: left;
+	padding: 2px;
+	text-decoration: none;
+	-webkit-filter: drop-shadow(2px 2px 2px #666);
+	filter: url(#drop-shadow);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+
+
+#fb{
+	height: 17px;
+	width: 18px;
+	transition: background-image 1s ease-in-out;
+	background-image:url(../images/icons-social/icon-fb.png);
+	background-repeat:no-repeat;
+}
+
+#fb:hover {
+  background-image:url(../images/icons-social/icon-fb-ovr.png);
+  background-repeat:no-repeat;
+}
+
+
+
+#tw{
+	height: 16px;
+	width: 22px;
+	transition: background-image 0.5s ease-in-out;
+	background-image:url(../images/icons-social/icons-tw.png);
+	background-repeat:no-repeat;
+}
+
+#tw:hover {
+  background-image:url(../images/icons-social/icons-tw-ovr.png);
+  background-repeat:no-repeat;
+}
+
+#t{
+	height: 16px;
+	width: 22px;
+	transition: background-image 0.5s ease-in-out;
+	background-image:url(../images/icons-social/icon-t.png);
+	background-repeat:no-repeat;
+}
+
+#t:hover {
+  background-image:url(../images/icons-social/icon-t-ovr.png);
+  background-repeat:no-repeat;
+}
+
+
+#pin{
+	height: 16px;
+	width: 22px;
+	transition: background-image 0.5s ease-in-out;
+	background-image:url(../images/icons-social/icon-pin.png);
+	background-repeat:no-repeat;
+}
+
+#pin:hover {
+  background-image:url(../images/icons-social/icon-pin-ovr.png);
+  background-repeat:no-repeat;
+}
+
+
+
+#icon-x, .icon-x2 {
+	height: 40px;
+	width: 	40px;
+	float:right;
+	transition: background-image 0.5s ease-in-out;
+	background-image:url(../images/icon-x.png);
+	background-repeat:no-repeat;
+	margin: 30px 0 0 0;
+}
+
+#icon-x:hover, .icon-x2:hover {
+  background-image:url(../images/icon-x-ovr.png);
+  background-repeat:no-repeat;
+}
+.close_grandma {
+	height: 40px;
+	width: 	40px;
+	float:right;
+	transition: background-image 0.5s ease-in-out;
+	background-image:url(../images/icon-x.png);
+	background-repeat:no-repeat;
+	top:10px;
+	right:20px
+}
+
+.close_grandma:hover {
+  background-image:url(../images/icon-x-ovr.png);
+  background-repeat:no-repeat;
+}
+
+.icon-x2, .icon-x3 {
+	right:65px;
+
+}
+.icon-x4 {
+	right:65px;
+	top:30px
+}
+.icon-x5 {
+	right:170px;
+	top:30px
+}
+#box-item{
+	clear:both;
+	margin-top: 75px;
+	padding-right: 25px;
+	background: url(../images/icon-dvd-bg.png) center center no-repeat;
+	height:88px;
+	width:217px
+}
+
+
+#box{
+	position: relative;
+	top: -20px;	
+}
+
+
+
+#box-img{
+	float:left;
+}
+
+
+
+#dvd-info{
+	color:#fff;
+	float:right;
+	font-size: .6em;
+	padding:20px 10px 0 0;
+	font-family: 'Carnevalee';
+	text-align: center
+}
+#dvd-info a {color:#fff}
+#box:hover #dvd-info {color:red}
+#dvd-info h2 span {
+	color:red;
+	font-size: 1.2em;
+}
+
+.white{
+	color:#fff;
+}
+
+.subsize {
+	line-height: 30px;
+}
+
+.tinycase {
+	font-size: 42px;
+	line-height: 30px;
+}
+
+
+
+/* Body Content
+***************************************/
+
+
+#intro {
+	overflow:hidden;
+	display:block;
+	margin:85px 0 15px -461px;
+	background: url(../images/bg-intro2.png) no-repeat top center;
+	height: 291px;
+	padding: 1px;
+	width: 928px;
+	opacity:1;
+	position: relative;
+	left:50%;
+	
+	
+}
+#intro.deeplink {
+	opacity: 0;
+	display: none;
+}
+#intro-info .close_grandma {top: -12px;
+right: -6px;}
+#intro .btn {bottom:0px}
+#intro-info {
+	color: #B4B4B4;
+	float: right;
+	font-size: 1.1em;
+	line-height: 2;
+	padding: 55px 0px;
+	font-weight: 100;
+	letter-spacing: -1px;
+	width:300px;
+}
+
+#intro-info span{
+	color: #fff;
+	font-weight: 500;
+	
+}
+
+#wait{
+	display:none;
+	z-index: 900
+	position:absolute;
+}
+
+#goto_form {
+	position: absolute;
+	margin-top:215px;
+	left:50%;
+	margin-left: 250px;
+	
+}
+
+
+#form_wrapper {
+	display:none;
+	opacity:0;
+	width:814px;
+	height:610px;
+	position: relative;
+	z-index:50;
+	left: 50%;
+	margin-left:-370px;
+}
+#wrap {
+	width:950px;
+	height:480px;
+	margin:10px auto;
+	padding-top:10px
+}
+.viewTitle {
+	width:350px;
+	height:40px;
+	float:left;
+	font-family: 'Carnevalee';
+	font-size:34px
+}
+
+.boxxy {
+	clear:both;
+	height:430px;
+	padding-top:30px;
+}
+.viewArea {
+	width:500px;
+	height:320px;
+	float:left;
+}
+.descWrap {
+	width:235px;
+	height:315px;
+	float:right;
+	overflow-y:auto;
+}
+.viewUser {
+	width:230px;
+	text-align:right;
+	clear:both;
+	float:right;
+	padding:5px 0;
+	text-decoration: underline;
+	font-size:1.2em
+}
+.viewSocial {
+	width:230px;
+	clear:both;
+	float:right;
+}
+#form_ov_1 {
+	display:block;
+	background: url(../images/form-bg.png) top center no-repeat;
+	width:814px;
+	height:540px;
+}
+
+#form_ov_1 .title {
+	display:block;
+	float:left;
+	font-family: 'Carnevalee';
+	color:#cc0814;
+	margin:95px 0 0 85px;
+	font-size:50px;
+}
+
+#form_ov_2, #form_ov_3, #form_ov_5 {
+	display:none;
+	background: url(../images/bg-video.png) top center no-repeat;
+	width:1017px;
+	height:498px;
+	margin-left:-101px;
+	margin-top: 35px !important;
+	color:#fff
+}
+
+#column4 {float: right;font-size:18px;
+color:#fff;
+top: 80px;
+right: -20px;
+width: 260px;
+height: 340px;
+overflow-y: auto;}
+
+#form_ov_2 .d1, #form_ov_3 .d1 , #form_ov_5 .d1 {color:#fff;
+font-size: 32px;
+position: relative;
+}
+#form_ov_2 #column4 {
+	position: relative;
+left: 0px;
+top: 10px;
+}
+#form_ov_2 #column4 .viewUser.user_name {
+	margin-right:20px;
+	}
+#form_ov_2 .title, #form_ov_3 .title {
+	display:block;
+	float:left;
+	opacity: 1;
+	text-align: 20px;
+	font-family: 'Carnevalee';
+	color:#fff;
+	width:370px;
+	margin:5px 0 0 25px;
+	height:80px;
+	font-size:34px;
+}
+#form_ov_4 {
+	display:none;
+	background: url(../images/bg-success.png) top center no-repeat;
+	width:1017px;
+	height:350px;
+	margin-left:-101px;
+	margin-top: 35px !important;
+}
+
+#form_ov_4 .title {
+	display:block;
+	float:left;
+	opacity: 1;
+	text-align: 20px;
+	font-family: 'Carnevalee';
+	color:#fff;
+	width:1000px;
+	margin:5px 0 0 25px;
+	height:80px;
+	font-size:46px;
+	left: 105px;
+top: 10px;
+position: relative;
+}
+#form_ov_4 .d1 {color: white;
+font-size: 24px;
+position: relative;
+top: 156px;
+left: 205px;}
+.column {
+	float:left;
+	width:300px;
+}
+#form_ov_4 .b_row{top: 50px;
+left: 112px;}
+
+#column1 {
+	margin-left:85px;
+}
+
+#column2 {
+	margin-left:10px;
+}
+
+#column3 {
+	margin-left: 30px;
+	width: 650px;
+	text-align: center;
+}
+
+#story_photo_small{
+	display:block;
+	height:380px;
+	overflow:hidden;
+}
+#confirm_image{
+	display:block;
+	height:300px;
+	overflow:hidden;
+}
+
+#confirm_text {
+	font-family: 'HelveticaNeue_LtCn';
+	color: #fff;
+	font-size: 30px;
+	height: 50px;
+}
+
+#gobackto_form {
+    float: left;
+    width:97px;  
+    background: url(../images/button-submit.png) top center no-repeat;  
+    margin-left: 210px;
+} 
+
+#goto_success{
+    float: left;
+    width:97px;  
+    background: url(../images/button-submit.png) top center no-repeat;  
+    margin-left: 30px;
+}
+
+#form_story {
+	font-family:"HelveticaNeue_LtCn";
+	font-size:22px;
+	border: 1px solid #8a8a8a;
+	background-color: #8a8a8a;
+	width: 260px;
+	height: 250px;
+	margin: 17px 1px 2px 10px;
+}
+
+#or {
+	font-family: 'Carnevalee';
+	text-align: center;
+	margin:6px 0 0 90px;
+	font-size: 28px;
+	margin-left:125px;
+	color:#fff;
+}
+
+body #upload_btn {
+	width:138px;
+	background: url(../images/button-up.png) top center no-repeat;
+	margin-left:70px;
+}
+
+body #submit_btn{
+	clear:both;
+	width:97px;
+	background: url(../images/button-submit.png) top center no-repeat;
+	margin-top:10px;
+	float:right;
+	margin-right:140px;
+}
+
+
+
+
+#wait, #errorlay {
+	position:fixed;
+    display:none;
+    z-index:5000;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/black_50.png');
+	top:0;
+	left:0;
+}
+#errorlay {
+	position:absolute;
+	z-index:10000;
+	cursor:pointer;
+	display:none;
+}
+#wait {
+	z-index:15000;
+}
+	.error_frame {
+		position: absolute;
+		height: 23px;
+		border: solid 1px red;
+		box-shadow:red 0 0 10px;
+		-webkit-box-shadow:red 0 0 10px;
+	}
+		.error {
+			display: block;
+			background: black;/* transparent url(../images/transparent_black_pixel.png) repeat; */
+			min-height: 18px;
+			color: red;
+			padding: 2px;
+			white-space: nowrap !important;
+			height: 19px !important;
+			line-height: 20px;
+			text-indent: 6px;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 14px;
+			padding-right:12px;
+		}
+		
+
+
+#player_large_cal {
+	display:none;
+}
+
+.spinner {
+	display: block;
+	position: absolute;
+	z-index: 5001;
+	left:50%;
+	top:50%;
+	margin:-75px 0 0 -75px;
+	-moz-animation:spinoff .8s infinite linear;
+	-webkit-animation:spinoff .8s infinite linear;
+}
+#waiter {
+	-moz-animation:spinoff .8s infinite linear;
+	-webkit-animation:spinoff .8s infinite linear;
+}
+
+@-moz-keyframes spinoff {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg); }
+}
+
+@-webkit-keyframes spinoff {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+
+
+/* Footer
+***************************************/
+footer, #footer {
+	background: url(../images/bg-footer.png) bottom repeat-x;
+	clear:both;
+	color:#B4B4B4;
+	font-size: .5em;
+	height:76px;
+	width:100%;
+	bottom:0;
+	position: fixed;
+	z-index:20;
+} 
+
+#footer-content{
+	margin: 0 auto;
+	width:970px;
+}
+
+
+#footer-elemets{
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	width:850px;
+}
+
+#footer-icon{
+	float: left;
+	padding:10px 10px 0 0;
+}
+
+
+#footer-info{
+	float: left;
+	
+}
+
+/* gallery and effects
+***************************************/
+#gallery_wrapper {
+	display:block;
+}
+
+.gallery_chrome {
+	width:347px;
+	height:201px;
+	box-shadow:0 0 5px #000;
+	background:url(../images/gallery_chrome.jpg) top left no-repeat transparent;
+	margin:5px;
+	list-style-type:none;
+	
+}
+#gallery>ul>li, #gallery>div {display: inline-block}
+.gallery_thumb, .gallery_chrome img {margin:2px;width:343px;height:197px;}
+
+
+.gridx li {
+	opacity: 0;
+	list-style-type:none;
+}
+
+.gridx li.shown,
+.no-js .gridx li,
+.no-cssanimations .gridx li {
+	opacity: 1;
+}
+
+
+/* More effects on http://tympanus.net/Development/GridLoadingEffects/ */
+.gridx.effect-2 li.animate {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	-moz-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveUp {
+	to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	to { transform: translateY(0); opacity: 1; }
+}
+@media screen and (max-width: 1000px) {
+#gallery {
+	max-width: 970px;
+;
+	margin: 0 auto 100px auto;
+}
+.gridx {
+	max-width: 1801px;
+	min-width:980px;
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+}
+}
+@media screen and (min-width: 1850px) {
+
+#gallery {
+	max-width: 1801px;
+	min-width:980px;
+	margin: 0 auto 100px auto;
+}
+.gridx {
+	max-width: 1801px;
+	min-width:980px;
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+}
+}
+@media screen and (max-width: 900px) {
+	.gridx li {
+		/*width: 50%;*/
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.gridx li {
+		width: 100%;
+	}
+}
+
+.caption {
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	left: 0;margin:2px;text-overflow:ellipsis;overflow: hidden;
+}
+.caption h3 {bottom:0px;position:absolute}
+.caption p {text-overflow:ellipsis;}
+.fade-caption, .scale-caption  {
+	opacity: 0;
+	width: 313px;
+	height: 165px;
+	text-align: left;
+	padding: 15px;text-overflow:ellipsis;overflow: hidden;
+}
+.gallery_chrome:hover .fade-caption, #mainwrapper .box:hover .scale-caption  {
+	opacity: 1;
+}
